@@ -13,7 +13,7 @@ export default class CategoryDropdown extends Component {
         // allows them to request new sub genre at the bottom of the dropdown 
         return (
             <React.Fragment>
-              <p className='dropdown_menu_item'>Suggest a new genre</p>
+              <p className='dropdown_menu_item dropdown_menu_item-suggest'>Suggest a new genre</p>
             </React.Fragment>
         )
     }

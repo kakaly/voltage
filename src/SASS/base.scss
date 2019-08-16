@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // colors
@@ -11,12 +11,12 @@ $color-light: #fff;
 $color-dark: #1c1a21;
 
 body {
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-    font-family: BasisGrotesque;
-    background-color: $color-light;
-    position: relative;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: BasisGrotesque;
+  background-color: $color-light;
+  position: relative;
 }
 
 //transitions
@@ -32,24 +32,31 @@ $shadow: 0 2px 8px 0 rgba(114, 155, 188, 0.25);
 $bp-single-column: 1019px;
 $bp-decrease: 934px;
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &_image {
-        width: 163px;
-        height: auto;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_image {
+    width: 163px;
+    height: auto;
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 // use the regular, bold
 
 @font-face {
-    font-family: 'BasisGrotesque';
-    src: url('../Fonts/basis-grotesque-bold.woff') format('woff');
-    font-weight: bold;
+  font-family: 'BasisGrotesque';
+  src: url('../Fonts/basis-grotesque-bold.woff') format('woff');
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'BasisGrotesque';
-    src: url('../Fonts/BasisGrotesque.woff') format('woff');
+  font-family: 'BasisGrotesque';
+  src: url('../Fonts/BasisGrotesque.woff') format('woff');
 }

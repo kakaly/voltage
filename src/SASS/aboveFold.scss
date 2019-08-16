@@ -1,26 +1,29 @@
 .aboveFold {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h1 {
-        @media screen and (max-width: 720px) {
-            padding: 0px 20px;
-            text-align: center;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    @media screen and (max-width: 720px) {
+      padding: 0px 20px;
+      text-align: center;
+    }
+  }
+
+  &_request {
+    color: $color-secondary;
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+    @media screen and (max-width: 720px) {
+      padding: 0px 20px;
+      text-align: center;
     }
 
-    &_request {
-        color: $color-secondary;
-        font-size: 1.1rem;
-        @media screen and (max-width: 720px) {
-            padding: 0px 20px;
-            text-align: center;
-        }
-
-        &_span {
-            text-decoration: underline;
-            cursor: pointer;
-        }
+    &_span {
+      text-decoration: underline;
+      cursor: pointer;
     }
+  }
 }

@@ -1,196 +1,200 @@
 .results {
-    display: flex;
-    justify-content: center;
-    @media screen and (max-width: $bp-single-column) {
-        flex-direction: column;
-        align-items: center;
-    }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dropdown {
-    width: 12rem;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    @media screen and (max-width: $bp-single-column) {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+  width: 13rem;
+  margin-top: 0.5rem;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  position: relative;
+  &_selected {
+    color: $color-secondary;
+    margin-left: 0.8rem;
+    font-size: 1.1rem;
+    transform: translateY(2px);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  &_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 2.2rem;
+    cursor: pointer;
+    color: #d8dde2;
+    border: 1px solid #d8dde2;
+    box-shadow: $shadow;
+  }
+  &_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.6rem;
+    &_open {
+      transform: rotate(-180deg);
+      transition: all 0.2s $trans-primary;
     }
-    position: relative;
-    &_selected {
-        color: $color-secondary;
-        margin-left: 0.8rem;
-        font-size: 1.1rem;
-        transform: translateY(2px);
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+    &_closed {
+      transition: all 0.2s $trans-primary;
+      transform: rotate(0deg);
     }
-    &_input {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        height: 2.2rem;
-        cursor: pointer;
-        color: #d8dde2;
-        border: 1px solid #d8dde2;
-        box-shadow: $shadow;
+  }
+  // the below is for the dropdown menu
+  &_menu {
+    border: 1px solid #d8dde2;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    top: 50px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    height: 10.5rem;
+    box-shadow: $shadow;
+    &_line {
+      background-color: #d8dde2;
+      height: 1px;
+      margin: 0;
+      padding: 0;
     }
-    &_arrow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0.6rem;
-        &_open {
-            transform: rotate(-180deg);
-            transition: all 0.2s $trans-primary;
-        }
-        &_closed {
-            transition: all 0.2s $trans-primary;
-            transform: rotate(0deg);
-        }
-    }
-    // the below is for the dropdown menu
-    &_menu {
-        border: 1px solid #d8dde2;
-        position: absolute;
-        z-index: 100;
-        background-color: #fff;
-        width: 100%;
-        top: 50px;
-        font-size: 1.1rem;
-        border-radius: 10px;
-        height: 10rem;
-        box-shadow: $shadow;
-        &_line {
-            background-color: #d8dde2;
-            height: 1px;
-            margin: 0;
-            padding: 0;
-        }
-        &_item {
-            color: $color-secondary;
-            margin-left: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s $trans-primary;
+    &_item {
+      color: $color-secondary;
+      margin-left: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s $trans-primary;
 
-            // make text uhighlightable
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            &:hover {
-                transform: translateX(5px);
-            }
-        }
+      // make text uhighlightable
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &-suggest {
+        padding-bottom: 40px;
+      }
+      &:hover {
+        transform: translateX(5px);
+      }
     }
+  }
 }
 
 .containProdEmail {
-    width: 58rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-    @media screen and (max-width: $bp-decrease) {
-        width: 100%;
-    }
+  width: 62rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  @media screen and (max-width: 995px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: $bp-decrease) {
+    width: 100%;
+  }
 }
 
 .producers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 62rem;
+  @media screen and (max-width: $bp-decrease) {
+    max-width: 100%;
+  }
+  &_card {
+    height: 7rem;
+    width: 29.5rem;
+    margin: 0.5rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #d8dde2;
+    box-shadow: $shadow;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 58rem;
+    justify-content: space-around;
+    align-items: center;
     @media screen and (max-width: $bp-decrease) {
-        max-width: 100%;
+      max-width: 40rem;
     }
-    &_card {
-        height: 7rem;
-        width: 25rem;
-        margin: 0.5rem 0.5rem;
-        border-radius: 10px;
-        border: 1px solid #d8dde2;
-        box-shadow: $shadow;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        @media screen and (max-width: $bp-decrease) {
-            max-width: 40rem;
-        }
-        &_photo {
-            background-color: $color-primary;
-            border-radius: 100rem;
-            height: 3.5rem;
-            width: 3.5rem;
-            min-width: 3.5rem;
-            margin-left: 1rem;
-        }
-        &_content {
-            align-self: flex-start;
-            margin-left: 1rem;
-            display: flex;
-            flex-direction: column;
-            &_text {
-                font-size: 0.75rem;
-                margin-right: 1rem;
-            }
-            &_link {
-                align-self: flex-end;
-                margin-right: 1rem;
-                font-size: 0.65rem;
-                color: $color-primary;
-            }
-        }
+    &_photo {
+      background-color: $color-primary;
+      border-radius: 100rem;
+      height: 3.5rem;
+      width: 3.5rem;
+      min-width: 3.5rem;
+      margin-left: 1rem;
     }
+    &_content {
+      align-self: flex-start;
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      &_text {
+        font-size: 0.75rem;
+        margin-right: 1rem;
+      }
+      &_link {
+        align-self: flex-end;
+        margin-right: 1rem;
+        font-size: 0.65rem;
+        color: $color-primary;
+      }
+    }
+  }
 }
 
 .emailCTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  &_text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0rem 2rem;
+    color: $color-dark;
+  }
+  &_input {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    &_text {
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 0rem 2rem;
-        color: $color-dark;
+
+    border-radius: 10px;
+    background-color: 'transparent';
+    &_form {
+      border-radius: 10px;
+      height: 2.2rem;
+      padding-left: 10px;
+      box-shadow: $shadow;
+      color: $color-secondary;
+      border: 1px solid #d8dde2;
     }
-    &_input {
-        display: flex;
-        justify-content: center;
-        box-shadow: $shadow;
-        border-radius: 10px;
-        &_form {
-            border-radius: 10px;
-            height: 2.2rem;
-            padding-left: 10px;
-            color: $color-secondary;
-            border: 1px solid #d8dde2;
-        }
-        &_button {
-            background-color: $color-secondary;
-            cursor: pointer;
-            border: 1px solid $color-secondary;
-            outline: none;
-            border-radius: 10px;
-            color: $color-light;
-            padding: 0.5rem 1rem;
-            margin-left: -20px;
-            s &:focus,
-            &:active {
-                outline: none;
-                border: 1px solid $color-secondary;
-            }
-        }
+    &_button {
+      background-color: $color-secondary;
+      box-shadow: $shadow;
+      cursor: pointer;
+      border: 1px solid $color-secondary;
+      outline: none;
+      border-radius: 10px;
+      color: $color-light;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      s &:focus,
+      &:active {
+        outline: none;
+        border: 1px solid $color-secondary;
+      }
     }
+  }
 }
