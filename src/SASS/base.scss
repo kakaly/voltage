@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// colors
+$color-primary: #26e2d2;
+$color-secondary: #729bbc;
+$color-light: #fff;
+$color-dark: #1c1a21;
+
+body {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    font-family: BasisGrotesque;
+    background-color: $color-light;
+    position: relative;
+}
+
+//transitions
+$trans-primary: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+// fonts
+$font-primary: 'GT Walsheim Pro', 'Gill Sans', sans-serif;
+$font-secondary: 'Founders Grotesk';
+
+$shadow: 0 2px 8px 0 rgba(114, 155, 188, 0.25);
+
+// breakpoints
+$bp-single-column: 1019px;
+$bp-decrease: 934px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_image {
+        width: 163px;
+        height: auto;
+    }
+}
+
+// use the regular, bold
+
+@font-face {
+    font-family: 'BasisGrotesque';
+    src: url('../Fonts/basis-grotesque-bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'BasisGrotesque';
+    src: url('../Fonts/BasisGrotesque.woff') format('woff');
+}

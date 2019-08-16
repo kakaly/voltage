@@ -1,0 +1,45 @@
+.topbar {
+    //   width: 100%;
+    margin: 4rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 720px) {
+        justify-content: center;
+    }
+    &_links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
+    }
+    &_link {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: $color-secondary;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-secondary;
+        }
+    }
+    &_submit {
+        background-color: $color-secondary;
+        margin-left: 4rem;
+        outline: none;
+        font-size: 1.1rem;
+        border: none;
+        color: $color-light;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            border: none;
+        }
+    }
+}
