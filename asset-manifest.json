@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/voltage/static/css/main.a4d24c07.chunk.css",
+    "main.js": "/voltage/static/js/main.988d30ef.chunk.js",
+    "main.js.map": "/voltage/static/js/main.988d30ef.chunk.js.map",
+    "runtime~main.js": "/voltage/static/js/runtime~main.fc151fb8.js",
+    "runtime~main.js.map": "/voltage/static/js/runtime~main.fc151fb8.js.map",
+    "static/js/2.0f25f6dd.chunk.js": "/voltage/static/js/2.0f25f6dd.chunk.js",
+    "static/js/2.0f25f6dd.chunk.js.map": "/voltage/static/js/2.0f25f6dd.chunk.js.map",
+    "index.html": "/voltage/index.html",
+    "precache-manifest.eb28b141fc874eeebd21c7a093b0bddb.js": "/voltage/precache-manifest.eb28b141fc874eeebd21c7a093b0bddb.js",
+    "service-worker.js": "/voltage/service-worker.js",
+    "static/css/main.a4d24c07.chunk.css.map": "/voltage/static/css/main.a4d24c07.chunk.css.map",
+    "static/media/main.scss": "/voltage/static/media/basis-grotesque-bold.62cbdba6.woff"
+  }
+}
