@@ -8,6 +8,7 @@ import React from 'react'
 
 export default function NavBottom() {
     return (
+       <div className="container bg">
         <div className='navBottom'>
            <div className='navBottom_item'>
               <h1>About us</h1>
@@ -22,6 +23,7 @@ export default function NavBottom() {
            <div className='navBottom_item'>
            <h1>Suggest a producer</h1>
            </div>
+        </div>  
         </div>
     )
 }
