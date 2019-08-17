@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import DownArrow from '../Resources/DownArrow'
 
-const subGenres = [
-    'Future bass',
-    'Bass house'
-   ]
+// const subGenres = [
+//     'Future bass',
+//     'Bass house'
+//    ]
 
 
 export default class CategoryDropdown extends Component {
