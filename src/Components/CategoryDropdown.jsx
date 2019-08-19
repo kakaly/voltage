@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom';
 import DownArrow from '../Resources/DownArrow'
 
-// const subGenres = [
-//     'Future bass',
-//     'Bass house'
-//    ]
-
-
 export default class CategoryDropdown extends Component {
+
+    constructor(props) {
+        super(props)
+        this.dropdown = React.createRef();
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+    }
 
     renderDropdownRequest = () => {
         // allows them to request new sub genre at the bottom of the dropdown 
@@ -42,9 +43,25 @@ export default class CategoryDropdown extends Component {
         )
     }
 
+    componentDidMount() {
+        document.addEventListener('click', this.handleClickOutside, true);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('click', this.handleClickOutside, true);
+    }
+
+    handleClickOutside = event => {
+        const domNode = ReactDOM.findDOMNode(this);
+    
+        if ((!domNode || !domNode.contains(event.target)) && this.props.menuOpen) {
+            this.props.toggleMenuHandler()
+        }
+    }
+
     render() {
         return (
-            <div className='dropdown'>
+            <div ref={this.dropdown} className='dropdown'>
                 <div className='dropdown_input' onClick={() => this.props.toggleMenuHandler()}>
                   <p className='dropdown_selected'>{this.props.subGenres[this.props.genreIndex]}</p>
                   <div className={`dropdown_arrow ${this.props.menuOpen ? 'dropdown_arrow_open' :  'dropdown_arrow_closed'}`}>
