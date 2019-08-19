@@ -1,8 +1,6 @@
 An app for electronic music. The project structure is as follows:
 
-- container components
-- regular components
-- functional components
+- container components -> regular components -> functional components
 
 You can find the containers in `src/Containers` and components in `/src/Components`
 

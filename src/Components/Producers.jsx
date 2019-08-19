@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import {
+    BrowserRouter as Router,
+    // Route,
+    Link
+  } from 'react-router-dom';
 
 export default class Producers extends Component {
     renderProducers = () => {
@@ -8,7 +13,9 @@ export default class Producers extends Component {
                   <div className='producers_card_photo'></div>
                   <div className='producers_card_content'> 
                   <p className='producers_card_content_text'>{producer}</p>
-                  <a href='#' className='producers_card_content_link'>Listen to Duskus</a>
+                  <Router>
+                    <Link to='/' className='producers_card_content_link'>Listen to Duskus</Link>
+                  </Router>
                   </div>
                   
                 </div>
