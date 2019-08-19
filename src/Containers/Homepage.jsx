@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {withRouter} from 'react-router-dom'
 import TopBar from '../Components/TopBar'
 import AboveFoldText from '../Components/AboveFoldText'
 import Results from '../Containers/Results'
@@ -13,6 +14,7 @@ const subGenres = [
 class Homepage extends Component {
     constructor(props) {
         super(props)
+        // it rerenders here when it shouldn't be
         this.state = {
             genreIndex: 0,
             menuOpen: false
@@ -30,7 +32,21 @@ class Homepage extends Component {
         })
     }
 
+    componentDidMount() {
+        const {genreIndex} = this.state
+        const {genre} = this.props.match.params
+        if (this.props.match.params && genre) {
+            if (genre === 'future-bass' && genreIndex !== 0) {
+                this.setState({genreIndex: 0})
+            } else if (genre === 'bass-house' && genreIndex !== 1) {
+                this.setState({genreIndex: 1})
+                console.log(genre, 'in', this.state.genreIndex)
+            }
+        }
+    }
+
     render() {
+        console.log('render')
         return (
             <React.Fragment>
                 <TopBar />
@@ -50,4 +66,4 @@ class Homepage extends Component {
     }
 }
 
-export default Homepage
+export default withRouter(Homepage)

@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" component={Homepage} />
+        <Route path="/:genre" component={Homepage} />
       </Router>
     </div>
   );
