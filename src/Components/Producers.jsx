@@ -9,7 +9,7 @@ export default class Producers extends Component {
     renderProducers = () => {
         return this.props.producers.map((producer, index) => {
             return (
-                <div className='producers_card'>
+                <div key={index} className='producers_card'>
                   <div className='producers_card_photo'></div>
                   <div className='producers_card_content'> 
                   <p className='producers_card_content_text'>{producer}</p>

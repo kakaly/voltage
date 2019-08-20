@@ -25,7 +25,7 @@ export default class CategoryDropdown extends Component {
         return (
         this.props.subGenres.map((subGenre, index) => {
                 return (
-                    <React.Fragment>
+                    <React.Fragment key={index}>
                     <p className='dropdown_menu_item' onClick={() => this.props.changeCategoryHandler(index)}>{subGenre}</p>
                     <div className='dropdown_menu_line'></div>
                     {index === this.props.subGenres.length - 1 && this.renderDropdownRequest(index)}
