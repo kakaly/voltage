@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92047866bf525007e0a00d2b74b8b978",
+    "revision": "daa9c232907ad1f64ecefd948db75b7b",
     "url": "/voltage/index.html"
   },
   {
-    "revision": "73e6b6da48344262a85a",
-    "url": "/voltage/static/css/main.4ee6d23c.chunk.css"
+    "revision": "95548ab9956e08591b56",
+    "url": "/voltage/static/css/main.5a8ba576.chunk.css"
   },
   {
     "revision": "b4d28cd1d6b2c7329b05",
     "url": "/voltage/static/js/2.b7217046.chunk.js"
   },
   {
-    "revision": "73e6b6da48344262a85a",
+    "revision": "95548ab9956e08591b56",
     "url": "/voltage/static/js/main.8c79f7bb.chunk.js"
   },
   {
