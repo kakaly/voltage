@@ -11,6 +11,15 @@
   margin-right: 0;
   margin-bottom: 0.5rem;
   position: relative;
+  &_suggest {
+    text-decoration: none;
+    &:active,
+    &:after,
+    &:visited {
+      text-decoration: none;
+      color: $color-light;
+    }
+  }
   &_selected {
     color: $color-secondary;
     margin-left: 0.8rem;
