@@ -45,11 +45,18 @@ class Homepage extends Component {
         }
     }
 
+    aboutClickHandler = () => {
+        this.props.history.push('/about')
+    }
+
+    goHomeHandler = () => {
+        this.props.history.push('/')
+    }
+
     render() {
-        console.log('render')
         return (
             <React.Fragment>
-                <TopBar />
+                <TopBar goHomeHandler={this.goHomeHandler}/>
                 <AboveFoldText />
                 <Results 
                     changeCategoryHandler={this.changeCategoryHandler}
@@ -59,8 +66,8 @@ class Homepage extends Component {
                     menuOpen={this.state.menuOpen} 
                     genre={subGenres[this.state.genreIndex]}
                 />
-                <NavBottom />
-                <BottomLogo />
+                <NavBottom aboutClickHandler={this.aboutClickHandler}/>
+                <BottomLogo goHomeHandler={this.goHomeHandler}/>
             </React.Fragment>
         )
     }

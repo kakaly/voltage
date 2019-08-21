@@ -1,10 +1,10 @@
 import React from 'react'
 import VoltageLogoWhite from 'Resources/VoltageLogoWhite'
 
-export default function BottomLogo() {
+export default function BottomLogo(props) {
     return (
         <div className='bottomLogo'>
-            <VoltageLogoWhite />
+            <VoltageLogoWhite goHomeHandler={props.goHomeHandler}/>
         </div>
     )
 }

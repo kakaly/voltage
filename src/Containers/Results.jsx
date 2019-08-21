@@ -34,7 +34,6 @@ export default class Results extends Component {
     }
 
     render() {
-        console.log("inside Results:",this.props.genreIndex)
         return (
             <div className='results'>
               <CategoryDropdown changeCategoryHandler={this.props.changeCategoryHandler}

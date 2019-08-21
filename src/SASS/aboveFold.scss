@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  .padBottom {
+    padding-bottom: 16rem;
+  }
   h1 {
     font-size: 2rem;
     margin-top: -0.5rem;

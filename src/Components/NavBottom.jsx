@@ -6,15 +6,17 @@ import React from 'react'
 
 /**<img src={About} alt='About us' className="navBottom_item_image"></img> */
 
-export default function NavBottom() {
+export default function NavBottom(props) {
     return (
        <div className="container bg">
         <div className='navBottom'>
-           <div className='navBottom_item'>
+           <div onClick={() => props.aboutClickHandler()} className='navBottom_item'>
               <h1>About us</h1>
            </div>
            <div className='navBottom_item'>
-           <h1>Send feedback</h1>
+           <a href='https://docs.google.com/forms/d/e/1FAIpQLSdt32_ev-XhfjyNobLyRuISEvqYIXY1Hd12dUiCqxLRkY6gVQ/viewform' target='blank'>
+           <h1 >Give feedback</h1>
+           </a>
            </div>
            <div className='navBottom_item'>
               <h1>Contact us</h1>
