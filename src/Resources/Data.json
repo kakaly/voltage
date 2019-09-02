@@ -1,5 +1,66 @@
 {
-    "futureBass": ["Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.", "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.", "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.", "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.", "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.", "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing."],
-    "bassHouse": [
-        "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.", "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.", "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.", "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.", "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.", "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno." ]
+  "futureBass": [
+    {
+      "name": "Duskus",
+      "desc": "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.",
+      "link": "https://soundcloud.com/duskus"
+    },
+    {
+      "name": "Losi",
+      "desc": "This Vancouver producer is on San Holo's Bitbird label and is known for his sound that is 'made to move air.'",
+      "link": "https://soundcloud.com/losi"
+    },
+    {
+      "name": "Sem",
+      "desc": "Sem's style is upbeat and melodic. He hasn't realeased anything in a while, but stay tuned for more!",
+      "link": "https://soundcloud.com/whosem"
+    },
+    {
+      "name": "Laxcity",
+      "desc": "Laxcity's organic sound is one to check out. He also makes different genres on his 'B sides' soundcloud account.",
+      "link": "https://soundcloud.com/laxcitymusic"
+    },
+    {
+      "name": "Cella",
+      "desc": "Cella is one to watch in 2020.",
+      "link": "https://soundcloud.com/thisiscella"
+    },
+    {
+      "name": "Quiet Bison",
+      "desc": "This guy sounds like Flume's son.",
+      "link": "https://soundcloud.com/quietbison"
+    }
+  ],
+  "bassHouse": [
+    {
+      "name": "Born Dirty",
+      "desc": "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.",
+      "link": "https://soundcloud.com/borndirtymusic"
+    },
+    {
+      "name": "Jace Mek",
+      "desc": "Jace mek has a dirty rave sound.",
+      "link": "https://soundcloud.com/jacemek"
+    },
+    {
+      "name": "Keeld",
+      "desc": "Another French G house producer.",
+      "link": "https://soundcloud.com/keeld"
+    },
+    {
+      "name": "Thykier",
+      "desc": "Danish bass house producer",
+      "link": "https://soundcloud.com/thykiermusic"
+    },
+    {
+      "name": "MNNR",
+      "desc": "MNNR",
+      "link": "https://soundcloud.com/mnnrmusic"
+    },
+    {
+      "name": "Lozz",
+      "desc": "Lozz",
+      "link": "https://soundcloud.com/lozzmusic"
+    }
+  ]
 }

@@ -12,12 +12,9 @@ export default class Producers extends Component {
                 <div key={index} className='producers_card'>
                   <div className='producers_card_photo'></div>
                   <div className='producers_card_content'> 
-                  <p className='producers_card_content_text'>{producer}</p>
-                  <Router>
-                    <Link to='/' className='producers_card_content_link'>Listen to Duskus</Link>
-                  </Router>
+                  <p className='producers_card_content_text'>{producer.desc}</p>
+                    <a href={producer.link} className='producers_card_content_link'>Listen to {producer.name}</a>
                   </div>
-                  
                 </div>
             )
         })
