@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
-import {
-    BrowserRouter as Router,
-    // Route,
-    Link
-  } from 'react-router-dom';
+
+const regexp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 export default class Producers extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            email: ''
+            email: '',
+            registered: false,
+            emailError: false
         }
     }
 
@@ -37,7 +36,9 @@ export default class Producers extends Component {
         e.preventDefault()
         var body = { "email" : this.state.email }
         const api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage_api/append"
-        fetch(api, {
+        console.log(regexp.test(this.state.email))
+        if (regexp.test(this.state.email)) {
+          fetch(api, {
             method: 'POST',
             body: JSON.stringify(body),
             headers:{
@@ -45,21 +46,38 @@ export default class Producers extends Component {
             },
           }).then(function(response) {
             return "OK"
-          }).then(function() {
-            console.log('Posted email:', body.email)
-          }).catch(error => {
+          }).then(() => {
+            console.log('registered')
+            this.setState({registered: true})
+          }).catch((error) => {
             console.log(error)
+            this.setState({registered: true, emailError: true})
           })
+        }
+    }
+
+    renderSignupSuccessText = () => {
+      const {emailError} = this.state;
+      const {genre} = this.props
+      if (emailError) {
+        return (
+          `Thanks for signing up to the mailing list! Stay tuned for more ${genre}.`
+        )
+      } else {
+        return ('Sorry, we encountered an error processing your email. Please refresh and try again. If this problem persists, please let us know using the send feedback form.')
+      }
     }
 
     renderEmailInput = () => {
+        const {registered} = this.state;
+        const {genre} = this.props
         return (
             <div className='emailCTA'>
-            <p className='emailCTA_text'>Love Future Bass? Join our monthly future bass email list to find out about favorite new future bass tracks</p>
-            <div className='emailCTA_input'>
+            <p className='emailCTA_text'>{registered ? `Thanks for signing up to the mailing list! Stay tuned for more ${genre}.` : `Love ${genre}? Join our monthly future bass email list to find out about favorite new future bass tracks`}</p>
+            {!registered && <div className='emailCTA_input'>
             <input className='emailCTA_input_form' type='text' placeholder='Email' onChange={this.handleChange}></input>
-            <button className='emailCTA_input_button' onClick={this.subscribe} >Subscribe</button>
-            </div>
+            <button className='emailCTA_input_button' onClick={this.subscribe}>Subscribe</button>
+            </div>}
             </div>
         )
      

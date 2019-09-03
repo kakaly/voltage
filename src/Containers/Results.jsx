@@ -24,7 +24,7 @@ export default class Results extends Component {
               genreIndex={this.props.genreIndex}
               toggleMenuHandler={this.props.toggleMenuHandler} 
               menuOpen={this.props.menuOpen} />
-              <Producers producers={this.getProducersArray()}/>
+              <Producers genre={this.props.genre} producers={this.getProducersArray()}/>
             </div>
         )
     }
