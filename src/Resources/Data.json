@@ -2,64 +2,76 @@
   "futureBass": [
     {
       "name": "Duskus",
-      "desc": "Simon White, better known as Duskus is a British, London-based electronic music producer and DJ. He is known for his cute sound and formant shifted vocal processing.",
+      "image": "https://i1.sndcdn.com/avatars-000606267795-nxgc9x-t500x500.jpg",
+      "desc": "Simon White, better known as Duskus, burst onto the scene with a style that screamed “less is more.” He has carved out a niche for himself by fusing trap drum sequences, future bass melodies, and minimalist synths, to create distinctively cheerful sound.",
       "link": "https://soundcloud.com/duskus"
     },
     {
       "name": "Losi",
-      "desc": "This Vancouver producer is on San Holo's Bitbird label and is known for his sound that is 'made to move air.'",
+      "image": "https://i1.sndcdn.com/avatars-000628049934-nudwjs-t500x500.jpg",
+      "desc": "Losi straddles the border between future bass and trap. His frequent usage of future bass elements makes him a captivating hybrid of the two genres; regardless, his latest release “Made to Move Air,” will hit your subs harder than the others on this list.",
       "link": "https://soundcloud.com/losi"
     },
     {
       "name": "Sem",
-      "desc": "Sem's style is upbeat and melodic. He hasn't realeased anything in a while, but stay tuned for more!",
+      "image": "https://i1.sndcdn.com/avatars-000574424784-6ls9h7-t500x500.jpg",
+      "desc": "Sem brings classic future bass synths to the table and effortlessly fuses them with his obvious love for the low end of the frequency spectrum. His catalogue features a plethora of unique basses layered underneath a familiar future bass sound.",
       "link": "https://soundcloud.com/whosem"
     },
     {
       "name": "Laxcity",
-      "desc": "Laxcity's organic sound is one to check out. He also makes different genres on his 'B sides' soundcloud account.",
+      "image": "https://i1.sndcdn.com/avatars-000655720742-b3u6vl-t500x500.jpg",
+      "desc": "Laxcity’s may or may not be a future bass artist; his organic sound draws inspiration from hip hop, jazz, and R&B to create an amalgam that somehow lands him in the realm of future bass. With Laxcity, easy listening and good vibes can be found in abundance.",
       "link": "https://soundcloud.com/laxcitymusic"
     },
     {
       "name": "Cella",
-      "desc": "Cella is one to watch in 2020.",
+      "image": "https://i1.sndcdn.com/avatars-000615641424-1hjnu0-t500x500.jpg",
+      "desc": "Cella is simultaneous reminder of where the genre came from and where it is moving towards. His tracks can feign simplicity when you need a song for studying or driving, but evolve into intensely complex compositions when you take a closer listen.",
       "link": "https://soundcloud.com/thisiscella"
     },
     {
       "name": "Quiet Bison",
-      "desc": "This guy sounds like Flume's son.",
+      "image": "https://i1.sndcdn.com/avatars-000654978128-boczoo-t500x500.jpg",
+      "desc": "Quiet Bison takes inspiration from a genre pioneer while finding room to experiment with new directions; he is consistently pushing out new beats that push the boundaries of the genre. If you love Flume, then you’ll love Quiet Bison.",
       "link": "https://soundcloud.com/quietbison"
     }
   ],
   "bassHouse": [
     {
       "name": "Born Dirty",
-      "desc": "With an eclectic mix of influences, Born Dirty has created a signature hybrid sound resting on a solid backbone of Hip-Hop, House and Techno.",
+      "image": "https://i1.sndcdn.com/avatars-000282291051-u3s2il-t500x500.jpg",
+      "desc": "Born Dirty uses hip-hop and classic house influences to breathe new life into a genre dominated by heavy basslines. His groovy, mid-range heavy beats provide a refreshing break if you ever find yourself tiring of an obsession with the low end.",
       "link": "https://soundcloud.com/borndirtymusic"
     },
     {
       "name": "Jace Mek",
-      "desc": "Jace mek has a dirty rave sound.",
+      "image": "https://i1.sndcdn.com/avatars-000684245042-e6opmj-t500x500.jpg",
+      "desc": "Hold on to your horses, because Jace Mek is about to show you the weird side of the genre.. Every track is absurdly creative and features fresh ideas and sounds, and each is instantly attributable to the up and coming producer by how it captures and holds your attention.",
       "link": "https://soundcloud.com/jacemek"
     },
     {
       "name": "Keeld",
-      "desc": "Another French G house producer.",
+      "image": "https://i1.sndcdn.com/avatars-000676370522-l6nce7-t500x500.jpg",
+      "desc": "Keeld creates authentic g-house with a fresh spin that shows minimalism and grimeyness are not antithetical. Instead of relying on a variety of synths to create the intensity, Keeld carefully crafts his patches to manufacture the ambience of an underground, European club.",
       "link": "https://soundcloud.com/keeld"
     },
     {
       "name": "Thykier",
-      "desc": "Danish bass house producer",
+      "image": "https://i1.sndcdn.com/avatars-000624731529-us7v92-t500x500.jpg",
+      "desc": "Thykier leans more towards the house side of things, but still includes a grimey low end in his beats. Everything you love about house gets reinvigorated with new takes on classic tropes, leading to dancey tracks that pack a heavier punch.",
       "link": "https://soundcloud.com/thykiermusic"
     },
     {
       "name": "MNNR",
-      "desc": "MNNR",
+      "image": "https://i1.sndcdn.com/avatars-000632870061-um3bec-t500x500.jpg",
+      "desc": "MNNR is a classic bass house artist with releases on major labels such as Confessions and Night Bass under his belt. His carefully chosen percussion provides a unique flair keeps things groovy while the sound design delivers a heavy complextro punch.",
       "link": "https://soundcloud.com/mnnrmusic"
     },
     {
       "name": "Lozz",
-      "desc": "Lozz",
+      "image": "https://i1.sndcdn.com/avatars-000631925793-gzoy9i-t500x500.jpg",
+      "desc": "Lozz produces beats that give an authentic bass house experience. Riddim and trap synths reign king in tracks that, while not for the faint of heart, show what the genre was originally all about. These are mid-party songs for when the energy is at its peak.",
       "link": "https://soundcloud.com/lozzmusic"
     }
   ]

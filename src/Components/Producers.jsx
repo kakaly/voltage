@@ -18,7 +18,7 @@ export default class Producers extends Component {
         return this.props.producers.map((producer, index) => {
             return (
                 <div key={index} className='producers_card'>
-                  <div className='producers_card_photo'></div>
+                  <div className='producers_card_photo'><img className='producers_card_photo-image' src={producer.image} alt={producer.name} /></div>
                   <div className='producers_card_content'> 
                   <p className='producers_card_content_text'>{producer.desc}</p>
                     <a href={producer.link} className='producers_card_content_link'>Listen to {producer.name}</a>

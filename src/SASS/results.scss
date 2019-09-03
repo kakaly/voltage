@@ -134,6 +134,7 @@
     align-items: center;
     @media screen and (max-width: $bp-decrease) {
       max-width: 40rem;
+      height: auto;
     }
     &_photo {
       background-color: $color-primary;
@@ -142,6 +143,11 @@
       width: 3.5rem;
       min-width: 3.5rem;
       margin-left: 1rem;
+      &-image {
+        height: 100%;
+        border-radius: 100rem;
+        width: 100%;
+      }
     }
     &_content {
       align-self: flex-start;
@@ -157,6 +163,9 @@
         margin-right: 1rem;
         font-size: 0.65rem;
         color: $color-primary;
+        @media screen and (max-width: $bp-decrease) {
+          padding-bottom: 1rem;
+        }
       }
     }
   }
