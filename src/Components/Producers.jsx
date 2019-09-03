@@ -6,6 +6,14 @@ import {
   } from 'react-router-dom';
 
 export default class Producers extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            email: ''
+        }
+    }
+
     renderProducers = () => {
         return this.props.producers.map((producer, index) => {
             return (
@@ -21,13 +29,36 @@ export default class Producers extends Component {
         
     }
 
+    handleChange = (event) => {
+        this.setState({email: event.target.value});
+    }
+
+    subscribe = (e) => {
+        e.preventDefault()
+        var body = { "email" : this.state.email }
+        const api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage_api/append"
+        fetch(api, {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers:{
+              'Content-Type': 'application/json'
+            },
+          }).then(function(response) {
+            return "OK"
+          }).then(function() {
+            console.log('Posted email:', body.email)
+          }).catch(error => {
+            console.log(error)
+          })
+    }
+
     renderEmailInput = () => {
         return (
             <div className='emailCTA'>
             <p className='emailCTA_text'>Love Future Bass? Join our monthly future bass email list to find out about favorite new future bass tracks</p>
             <div className='emailCTA_input'>
-            <input className='emailCTA_input_form' type='text' placeholder='Email'></input>
-            <button className='emailCTA_input_button' >Subscribe</button>
+            <input className='emailCTA_input_form' type='text' placeholder='Email' onChange={this.handleChange}></input>
+            <button className='emailCTA_input_button' onClick={this.subscribe} >Subscribe</button>
             </div>
             </div>
         )
