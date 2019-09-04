@@ -35,7 +35,11 @@ export default class Producers extends Component {
     subscribe = (e) => {
         e.preventDefault()
         var body = { "email" : this.state.email }
-        const api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage_api/append"
+        var genre = this.props.genre
+        console.log(genre)
+        var api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage/"
+        var route = genre === "Future bass" ? 'appendFutureBass' : 'appendBassHouse'
+        api = api + route
         console.log(regexp.test(this.state.email))
         if (regexp.test(this.state.email)) {
           fetch(api, {
