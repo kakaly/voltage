@@ -36,7 +36,6 @@ export default class Producers extends Component {
         const {genre} = this.props
         e.preventDefault()
         var body = { "email" : this.state.email }
-        var genre = this.props.genre
         var api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage/"
         var route = genre === "Future bass" ? 'appendFutureBass' : 'appendBassHouse'
         api = api + route
