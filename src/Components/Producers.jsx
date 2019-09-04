@@ -28,6 +28,14 @@ export default class Producers extends Component {
         
     }
 
+    componentDidUpdate(nextProps) {
+      if (nextProps.genre !== this.props.genre) {
+        this.setState({
+          registered: false
+        })
+      }
+    }
+
     handleChange = (event) => {
         this.setState({email: event.target.value});
     }
@@ -84,7 +92,6 @@ export default class Producers extends Component {
             </div>}
             </div>
         )
-     
     }
 
     render() {
