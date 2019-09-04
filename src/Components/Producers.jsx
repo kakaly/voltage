@@ -33,10 +33,11 @@ export default class Producers extends Component {
     }
 
     subscribe = (e) => {
+        const {genre} = this.props
         e.preventDefault()
         var body = { "email" : this.state.email }
-        const api = "https://us-central1-imfreefyi.cloudfunctions.net/voltage_api/append"
-        console.log(regexp.test(this.state.email))
+        //https://us-central1-imfreefyi.cloudfunctions.net/voltage_api
+        const api = `localhost:5555/append${genre === 'Future bass' ? '' : 2}`
         if (regexp.test(this.state.email)) {
           fetch(api, {
             method: 'POST',
@@ -53,6 +54,8 @@ export default class Producers extends Component {
             console.log(error)
             this.setState({registered: true, emailError: true})
           })
+        } else {
+          alert('Sorry, that is not a valid email')
         }
     }
 
@@ -73,7 +76,7 @@ export default class Producers extends Component {
         const {genre} = this.props
         return (
             <div className='emailCTA'>
-            <p className='emailCTA_text'>{registered ? `Thanks for signing up to the mailing list! Stay tuned for more ${genre}.` : `Love ${genre}? Join our monthly future bass email list to find out about favorite new future bass tracks`}</p>
+            <p className='emailCTA_text'>{registered ? `Thanks for signing up to the mailing list! Stay tuned for more ${genre}.` : `Love ${genre}? Join our monthly ${genre} email list to find out about favorite new future bass tracks`}</p>
             {!registered && <div className='emailCTA_input'>
             <input className='emailCTA_input_form' type='text' placeholder='Email' onChange={this.handleChange}></input>
             <button className='emailCTA_input_button' onClick={this.subscribe}>Subscribe</button>
