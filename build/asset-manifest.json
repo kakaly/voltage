@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/voltage/static/css/main.e056835d.chunk.css",
-    "main.js": "/voltage/static/js/main.dc0bda87.chunk.js",
-    "main.js.map": "/voltage/static/js/main.dc0bda87.chunk.js.map",
-    "runtime~main.js": "/voltage/static/js/runtime~main.fc151fb8.js",
-    "runtime~main.js.map": "/voltage/static/js/runtime~main.fc151fb8.js.map",
-    "static/js/2.1141488d.chunk.js": "/voltage/static/js/2.1141488d.chunk.js",
-    "static/js/2.1141488d.chunk.js.map": "/voltage/static/js/2.1141488d.chunk.js.map",
-    "index.html": "/voltage/index.html",
-    "precache-manifest.fc5c00d471443a1c974eca8d5555cd25.js": "/voltage/precache-manifest.fc5c00d471443a1c974eca8d5555cd25.js",
-    "service-worker.js": "/voltage/service-worker.js",
-    "static/css/main.e056835d.chunk.css.map": "/voltage/static/css/main.e056835d.chunk.css.map",
-    "static/media/main.scss": "/voltage/static/media/basis-grotesque-bold.62cbdba6.woff"
+    "main.css": "www.thevoltage.club/static/css/main.5693beb9.chunk.css",
+    "main.js": "www.thevoltage.club/static/js/main.accf8b23.chunk.js",
+    "main.js.map": "www.thevoltage.club/static/js/main.accf8b23.chunk.js.map",
+    "runtime~main.js": "www.thevoltage.club/static/js/runtime~main.61e92061.js",
+    "runtime~main.js.map": "www.thevoltage.club/static/js/runtime~main.61e92061.js.map",
+    "static/js/2.1141488d.chunk.js": "www.thevoltage.club/static/js/2.1141488d.chunk.js",
+    "static/js/2.1141488d.chunk.js.map": "www.thevoltage.club/static/js/2.1141488d.chunk.js.map",
+    "index.html": "www.thevoltage.club/index.html",
+    "precache-manifest.05ac40edaca42fa783855ea12154fbfe.js": "www.thevoltage.club/precache-manifest.05ac40edaca42fa783855ea12154fbfe.js",
+    "service-worker.js": "www.thevoltage.club/service-worker.js",
+    "static/css/main.5693beb9.chunk.css.map": "www.thevoltage.club/static/css/main.5693beb9.chunk.css.map",
+    "static/media/main.scss": "www.thevoltage.club/static/media/basis-grotesque-bold.62cbdba6.woff"
   }
 }
